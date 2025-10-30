@@ -1,75 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PinGO</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styleprojects.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sistema GEINF-SEMSEG desenvolvido por Vitória Beatriz para a Prefeitura de Manaus" />
+  <meta name="keywords" content="GEINF-SEMSEG, Flask, Python, sistema, prefeitura, Manaus" />
+  <title>GEINF-SEMSEG — Vitória Beatriz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleprojects.css" />
 </head>
+
 <body class="dark">
   <div id="particles-js"></div>
+
+  <!-- ===== HEADER ===== -->
   <header>
     <nav>
-      <div class = "nav-center">
-        <h1>PinGO</h1>
-
+      <h1>Vitória Beatriz</h1>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html#hero">Início</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#projetos">Projetos</a></li>
+          <li><a href="index.html#Curriculo">Currículo</a></li>
+          <li><button id="toggle-theme" aria-label="Alternar tema">🌙</button></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
   </header>
 
-  </section>
-
-  <!-- Projetos -->
-  <section id="projetos">
-  <h2>Projetos</h2>
-  <div class="projetos-grid">
-    
-    <div class="projeto">
-      <div class="projeto-img">
-        <img src="images/Pingo.png" alt="Projeto PinGO">
-        <div class="overlay">
-          <h3>PinGO</h3>
-          <p>O projeto PinGO é uma plataforma mobile criada para ajudar professores e responsáveis a acompanhar o desenvolvimento de crianças com Transtorno do Espectro Autista (TEA). Além de registrar o rendimento dos alunos, o app oferece atividades socioeducativas, gera dados que apoiam o tratamento e a criação de planos de ensino individualizados....</p>
-          <a href="projeto1.html" class="btn">Ver mais</a>
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero-projeto">
+      <div class="hero-content">
+        <p class="hero-subtitle">SEMSEG - Prefeitura de Manaus</p>
+        <h1 class="hero-title">Sistema GEINF-SEMSEG</h1>
+        <p class="hero-description">Sistema web para gestão de processos internos da Gerência de Informática</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">
+  Ver detalhes
+</a>
+          <a href="#video-projeto" class="btn btn-secondary">Ver demonstração</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="projeto">
-      <div class="projeto-img">
-        <img src="projeto2.jpg" alt="Projeto 2">
-        <div class="overlay">
-          <h3>Projeto 2</h3>
-          <p></p>
-          <a href="projeto2.html" class="btn">Ver mais</a>
+    <!-- ===== DETALHES DO PROJETO ===== -->
+    <section id="projeto-detalhes">
+      <div class="container">
+        <div class="projeto-imgs">
+          <div class="img-grid">
+            <div class="img-item">
+              <img src="images/semseg/semseg-index.png" alt="Tela inicial do GEINF-SEMSEG" loading="lazy">
+            </div>
+            <div class="img-item">
+              <img src="images/semseg/DASHBOARD.png" alt="Tela de dashboard do sistema" loading="lazy">
+            </div>
+            <div class="img-item">
+              <img src="images/semseg/chamados.png" alt="Tela de chamados técnicos" loading="lazy">
+            </div>
+            <div class="img-item">
+              <img src="images/semseg/OFICIOS.png" alt="Tela de ofícios e portarias" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-texto">
+          <h2>Sobre o GEINF-SEMSEG</h2>
+          <p>O sistema foi desenvolvido para organizar, agilizar e padronizar os processos de controle de ofícios, portarias e chamados técnicos da Gerência de Informática (GEINF), vinculada à SEMSEG da Prefeitura de Manaus.</p>
+          <p>A solução web proporciona eficiência e transparência nas atividades do setor de TI, com rastreabilidade de todas as ações e comunicação interna otimizada.</p>
+
+          <div class="tech-stack">
+            <h3>Tecnologias</h3>
+            <div class="tech-list">
+              <div class="tech-category">
+                <h4>Backend</h4>
+                <ul>
+                  <li>Flask (Python)</li>
+                  <li>SQLite</li>
+                  <li>Google Sheets API</li>
+                  <li>Trello API</li>
+                </ul>
+              </div>
+              <div class="tech-category">
+                <h4>Frontend</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-role">
+            <h3>Meu papel</h3>
+            <p>Responsável pelo desenvolvimento completo: análise, design, backend, integrações, banco de dados e implantação interna.</p>
+          </div>
+
+          <a href="#" class="btn btn-relatorio">
+  <i class="fas fa-file-alt"></i>
+  Ver Relatório Completo</a>
+            <a href="#" class="btn btn-outline">Código Fonte</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="projeto">
-      <div class="projeto-img">
-        <img src="projeto3.jpg" alt="Projeto 3">
-        <div class="overlay">
-          <h3>Projeto 3</h3>
-          <p>Descrição rápida do projeto.</p>
-          <a href="projeto3.html" class="btn">Ver mais</a>
+    <!-- ===== VÍDEO ===== -->
+    <section id="video-projeto">
+      <div class="container">
+        <h2>Demonstração do Sistema</h2>
+        <div class="video-container">
+          <!-- vídeo local -->
+          <!-- <video controls poster="images/semseg/thumb-video.png">
+            <source src="videos/demo-semseg.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video> -->
+
+          <!-- vídeo YouTube -->
+          <iframe 
+            src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+            title="Demonstração GEINF-SEMSEG"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Relatório do projeto -->
+    <section id="relatorio">
+      <div class="container">
+        <h2>📄 Relatório de Desenvolvimento do Sistema GEINF-SEMSEG</h2>
 
+        <div class="relatorio-content">
+          <div class="relatorio-section">
+            <h3>1. Introdução</h3>
+            <p>O projeto foi desenvolvido com o objetivo de organizar, agilizar e padronizar o processo de elaboração e controle de ofícios e portarias, além de integrar o gerenciamento de chamados técnicos da Gerência de Informática (GEINF), vinculada à Secretaria Municipal de Segurança Pública e Defesa Social (SEMSEG) da Prefeitura de Manaus. O sistema funciona em rede local, garantindo eficiência, transparência e rastreabilidade das demandas do setor de TI.</p>
+          </div>
+
+          <div class="relatorio-section">
+            <h3>2. Tecnologias Utilizadas</h3>
+            <ul>
+              <li><strong>Flask (Python):</strong> Backend do sistema e interface web.</li>
+              <li><strong>SQLite:</strong> Banco de dados local leve e portátil.</li>
+              <li><strong>Google Sheets API:</strong> Integração para leitura e atualização de planilhas.</li>
+              <li><strong>Trello API:</strong> Coleta de informações de tarefas e atividades da equipe GEINF.</li>
+              <li><strong>HTML, CSS e JavaScript:</strong> Interface web intuitiva e responsiva.</li>
+            </ul>
+          </div>
+
+          <div class="relatorio-section">
+            <h3>3. Etapas de Desenvolvimento</h3>
+            <div class="etapas-grid">
+              <div class="etapa">
+                <h4>3.1 Planejamento e Estruturação</h4>
+                <p>Foram definidos os módulos principais do sistema: controle de chamados, emissão de ofícios e portarias, e integração com APIs. A modelagem do banco de dados foi feita em SQLite e a arquitetura modularizada em Flask.</p>
+              </div>
+              <div class="etapa">
+                <h4>3.2 Backend (Flask)</h4>
+                <p>Implementação das rotas e APIs REST para cadastro, listagem e atualização de chamados e documentos. Configuração do servidor Flask para rodar internamente na rede da SEMSEG.</p>
+              </div>
+              <div class="etapa">
+                <h4>3.3 Integrações</h4>
+                <ul>
+                  <li><strong>Google Sheets API:</strong> Configurada com credenciais seguras e sincronização automática.</li>
+                  <li><strong>Trello API:</strong> Importação de dados de quadros e cartões do time de TI.</li>
+                </ul>
+              </div>
+              <div class="etapa">
+                <h4>3.4 Interface e Funcionalidades</h4>
+                <p>Criação de páginas HTML integradas ao Jinja2, formulários para registro e filtros dinâmicos. Design otimizado para facilitar navegação e visualização de status.</p>
+              </div>
+              <div class="etapa">
+                <h4>3.5 Banco de Dados</h4>
+                <p>Estruturado em SQLite com tabelas para usuários, chamados, documentos e configurações. Sistema leve, com backups automáticos e fácil manutenção.</p>
+              </div>
+              <div class="etapa">
+                <h4>3.6 Testes e Implantação</h4>
+                <p>Após testes locais, o sistema foi implantado no servidor interno da SEMSEG e passou por treinamentos básicos com os usuários do setor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relatorio-section">
+            <h3>4. Resultados Obtidos</h3>
+            <ul class="resultados">
+              <li>Maior agilidade no registro e acompanhamento de chamados.</li>
+              <li>Padronização dos documentos oficiais.</li>
+              <li>Integração com ferramentas já utilizadas pela equipe.</li>
+              <li>Transparência e rastreabilidade em todas as etapas do processo.</li>
+            </ul>
+          </div>
+
+          <div class="relatorio-section">
+            <h3>5. Conclusão</h3>
+            <p>O sistema GEINF-SEMSEG representa um avanço na gestão documental e operacional da Secretaria, promovendo eficiência, transparência e controle das atividades da equipe de informática. Sua arquitetura permite futuras expansões, como dashboards e relatórios automáticos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUTROS PROJETOS ===== -->
+    <section id="projetos-relacionados">
+      <div class="container">
+        <h2>Outros projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <div class="projeto-img">
+              <img src="projeto2.jpg" alt="Projeto 2" loading="lazy">
+              <div class="projeto-overlay">
+                <h3>Projeto 2</h3>
+                <a href="projeto2.html" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="projeto-card">
+            <div class="projeto-img">
+              <img src="projeto3.jpg" alt="Projeto 3" loading="lazy">
+              <div class="projeto-overlay">
+                <h3>Projeto 3</h3>
+                <a href="projeto3.html" class="btn btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Vitória Mota. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Vitória Mota. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="particles-config.js"></script>
-<script src="script.js"></script>
+  <button id="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
